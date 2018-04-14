@@ -16,6 +16,31 @@ public class Missile : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision){
-		Destroy (collision.collider.gameObject);
+
+		if(collision.collider.gameObject.tag == "Enemy") {
+			GameObject explosion = GameObject.Instantiate (Resources.Load ("Prefabs/Explosion")as GameObject);
+			explosion.transform.position = collision.collider.gameObject.transform.position; 
+
+			Destroy (collision.collider.gameObject);
+
+			Destroy (this.gameObject);
+		}
+			
+		if (collision.collider.gameObject.tag == "Ally") {
+
+			//Para el Game Object hijo del que recibe la colision
+			GameObject son = collision.collider.gameObject.transform.Find("LuzVerde").gameObject;
+			son.GetComponent<Light> ().color = new Color (0, 0, 1);
+			//Cambio de color de la luz cuando impacta el collider
+			//Cambio del componente light del Game Object
+			//Para el que no es hijo:
+			/*collision.collider.gameObject.GetComponent<Light> ().color = new Color (0, 0, 1);
+			 */
+		
+			Destroy (this.gameObject);
+
+		}
+
+		}
 	}
-}
+

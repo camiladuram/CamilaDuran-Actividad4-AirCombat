@@ -11,7 +11,7 @@ public class Aircraft : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.Translate (0, 0, 1);
+		this.transform.Translate (0f, 0f, 0.3f);
 
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			this.transform.Translate (0, 8, 0);
