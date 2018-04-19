@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.47597206, g: 0.4562049, b: 0.4864182, a: 1}
+  m_IndirectSpecularColor: {r: 0.4759645, g: 0.45618933, b: 0.4864149, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -636,7 +636,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 1856
-  field of view: 100.2
+  field of view: 72
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -661,7 +661,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661033743}
   m_LocalRotation: {x: 0.1337755, y: -0, z: -0, w: 0.99101174}
-  m_LocalPosition: {x: -12.091682, y: 59.19809, z: -341.57236}
+  m_LocalPosition: {x: -12.091682, y: 66, z: -365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1748568053}
@@ -1577,7 +1577,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1748568051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.091682, y: 17.80191, z: 210}
+  m_LocalPosition: {x: 12.091682, y: 17.80191, z: 259}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 661033747}
